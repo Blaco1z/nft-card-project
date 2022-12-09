@@ -12,7 +12,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 1rem;
+    
+}
+hr {
+    border: 0.05rem solid #ffffff79;
+    opacity: 0.5;
 }
 .outer{
     max-width: 400px;
@@ -22,7 +27,6 @@ body{
     background-color:hsl(216, 50%, 16%);
     padding: 20px;
     border-radius: 1rem;
-    text-align: center;
     margin: 0 2em;
 }
 .inner #mainimg{
@@ -30,35 +34,67 @@ body{
     border-radius: 1rem;   
 }
 /* Texts */
-.text h2:hover{
-    color:hsl(178, 100%, 50%);
-    cursor: pointer;
-}
+
 .text h2{
     color:hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    margin-block: 1.3rem;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
 }
+
+.text h2:hover{
+    color:hsl(178, 100%, 50%);  
+}
+
 .firstp{
     color:hsl(215, 51%, 70%);
-    margin: 1rem;
+    margin-block: 1.3rem;
 }
-.right{
-    color:hsl(178, 100%, 50%);
+.text .value{
+    color:hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1.3rem;
 }
-.left{
-    color: hsl(215, 51%, 70%);
 
+.text .value div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.85rem;
 }
-.buttom p{
+
+.text .value div #eth{
+    color: hsl(178, 100%, 50%);
+}
+
+.buttom{
     color: hsl(215, 51%, 70%);
+    margin-top: 1.3rem;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
 }
 .buttom p a{
     text-decoration: none;
     color:hsl(0, 0%, 100%);
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
 }
 .buttom p a:hover{
     text-decoration: none;
-    color:hsl(178, 100%, 50%)
+    color:hsl(178, 100%, 50%);
 }
 .buttom img{
-    width: 1rem;
+    width: 2.2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
 }
