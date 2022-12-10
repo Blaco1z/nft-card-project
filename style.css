@@ -58,8 +58,8 @@ hr {
     border-radius: 1rem; 
     opacity: 0; 
     transition-property: opacity;
-    transition-duration: 550ms;
-    transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(.70, .35, .41, .78);
  }
 .images .overflow{
     font-size: 0.8rem;
