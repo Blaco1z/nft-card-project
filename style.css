@@ -16,7 +16,7 @@ body{
     
 }
 hr {
-    border: 0.05rem solid #ffffff79;
+    border: 0.05rem solid hsl(215, 32%, 27%);
     opacity: 0.5;
 }
 .outer{
