@@ -15,12 +15,14 @@
     <main class="outer">
       <div class="inner">
         <div class="images">
-          <a href=""><img src="./images/image-equilibrium.jpg" alt="" id="mainimg"></a>
-          <!-- <img src="./images/icon-view.svg" alt="When one hovers over the main image it appears" class="overflow"> -->
+          <img src="./images/image-equilibrium.jpg" alt="" id="main">
+          <div id="eye-icon">
+            <div class="overflow"><img src="./images/icon-view.svg" alt="When one hovers over the main image it appears" ></div>
+          </div>
         </div>
         
         <div class="text">
-          <h2> Equilibrium #3429</h2>
+          <h2 id="22"> Equilibrium #3429</h2>
           <p class="firstp">Our Equilibrium collection promotes balance and calm.</p> 
           <div class="value">
             <div>
@@ -41,5 +43,16 @@
       </div>
     </main>
 
+    <script>
+      let imageHover = document.querySelector(".images");
+      let eyeIcon = document.getElementById("eye-icon");
+      imageHover.addEventListener("mouseleave",(e)=>{
+        eyeIcon.style.opacity = 0;
+      })
+      
+      imageHover.addEventListener("mouseover",(e)=>{
+        eyeIcon.style.opacity = 1;
+      })
+    </script>
 </body>
 </html>
