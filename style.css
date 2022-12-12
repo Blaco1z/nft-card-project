@@ -16,7 +16,7 @@ body{
     
 }
 hr {
-    border: 0.05rem solid #ffffff79;
+    border: 0.03rem solid #ffffff67;
     opacity: 0.5;
 }
 .outer{
@@ -80,7 +80,7 @@ hr {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: .5rem;
+    gap: 0.7rem;
 }
 .buttom p a{
     text-decoration: none;
